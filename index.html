@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MultiFile Dev Viewer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+<h1>MultiFile Dev Viewer</h1>
+<div>
+<button id="loginBtn">Login</button>
+<button id="upgradeBtn">Upgrade</button>
+</div>
+</header>
+
+<div class="app">
+<aside class="sidebar">
+<button id="uploadBtn">Upload Files</button>
+<input type="text" id="searchInput" placeholder="Search (Pro)">
+<div id="fileTree"></div>
+</aside>
+
+<main class="workspace">
+<div id="infoPanel"></div>
+<div id="preview"></div>
+</main>
+</div>
+
+<input type="file" id="fileInput" multiple hidden>
+<script src="script.js"></script>
+</body>
+</html>
