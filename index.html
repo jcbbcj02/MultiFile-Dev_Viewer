@@ -6,30 +6,37 @@
 <title>MultiFile Dev Viewer</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-theme="light">
 
+<!-- Topbar -->
 <header class="topbar">
 <h1>MultiFile Dev Viewer</h1>
-<div>
-<button id="loginBtn">Login</button>
-<button id="upgradeBtn">Upgrade</button>
+<div class="top-buttons">
+<button id="darkToggle">Dark Mode</button>
+<button id="upgradeBtn" class="btn-pro">Upgrade to Pro</button>
 </div>
 </header>
 
+<!-- App Layout -->
 <div class="app">
+
+<!-- Sidebar -->
 <aside class="sidebar">
-<button id="uploadBtn">Upload Files</button>
-<input type="text" id="searchInput" placeholder="Search (Pro)">
-<div id="fileTree"></div>
+<div id="fileUploadBtn" class="upload-box btn-free">Upload File</div>
+<div id="dropArea" class="drop-area">Drag & Drop File Here</div>
+<input type="file" id="fileInput" multiple style="display:none">
 </aside>
 
+<!-- Workspace -->
 <main class="workspace">
-<div id="infoPanel"></div>
-<div id="preview"></div>
+<div class="toolbar">
+<span>Preview</span>
+</div>
+<div id="previewContainer" class="preview"></div>
 </main>
+
 </div>
 
-<input type="file" id="fileInput" multiple hidden>
 <script src="script.js"></script>
 </body>
 </html>
